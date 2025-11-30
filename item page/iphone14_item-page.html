@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="item page.css">
+		<meta charset="UTF-8">
+		<title>Item page</title>
+	</head>
+	<body>
+		<div class="navbar">
+			<div class="left-navbar">
+				<img src="images/KV-mart-logo.png" class="topbar-logo dontadddarkmode" onclick="window.open('../index.html', '_self')">
+				<div class="searchbox-container">
+					<button type="submit" class="searchbutton"><img src="images/searchlogo.png" class="searchicon"></button>
+					<form id="search-form">
+						<input class="searchbox" id="search-input" placeholder="Search">
+	
+					</form>
+					
+				</div>
+			</div>
+			<div class="mid-navbar">
+				<div class="dropdown-box" onmouseleave="hidedropdown('mobiles', 'side-mobile');">
+					<div class="dropdown-placeholder" onmouseenter="showdropdown('mobiles', 'side-mobile') ">
+						<p class="placeholder-text">Mobiles</p>
+						<p class="placeholder-arrow">‹</p>
+					</div>
+					<div class="mobiles-dropdowns-all">
+						<div class="mobiles-dropdown">
+							<p class="dropdown-title Mobiles-title">Mobiles</p>
+							<div class="option-button" onclick="changingDropdown('mobiles', 'Apple', 'side-mobile')">
+								<p class="option-text">Apple</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('mobiles', 'Samsung', 'side-mobile')">
+								<p class="option-text">Samsung</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('mobiles', 'Xiaomi', 'side-mobile')">
+								<p class="option-text">XiaoMi</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('mobiles', 'Oneplus', 'side-mobile')">
+								<p class="option-text">OnePlus</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('mobiles', 'Nokia', 'side-mobile')">
+								<p class="option-text">Nokia</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('mobiles', 'Huawei', 'side-mobile')">
+								<p class="option-text">Huawei</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('mobiles', 'Oppo', 'side-mobile')">
+								<p class="option-text">Oppo</p>
+								<p class="option-arrow">‹</p>
+							</div>
+						</div>
+						<div class="side-mobile-dropdown side-dropdown">
+							
+						</div>		
+						<div class="hidden-dropdowns hidden-dropdowns-mobiles">
+							<div class="Apple-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('mobiles')">‹</button>
+									<p class="dropdown-title side-title">Apple</p>
+								</div>
+								
+								<div class="option-button no-arrow mobile" onclick="window.open('../item page/iphone15_item-page.html', '_self')">
+									<p class="option-text mobile-text">iPhone 15</p>
+								</div>
+								<div class="option-button no-arrow mobile" onclick="window.open('../item page/iphone14_item-page.html', '_self')">
+									<p class="option-text mobile-text">iPhone 14</p>
+								</div>
+								<div class="option-button no-arrow mobile" onclick="window.open('../item page/iphone13_item-page.html', '_self')">
+									<p class="option-text mobile-text">iPhone 13</p>
+								</div>
+								<div class="option-button no-arrow mobile" onclick="window.open('../item page/iphone12_item-page.html', '_self')">
+									<p class="option-text mobile-text">iPhone 12</p>
+								</div>
+								<div class="option-button no-arrow mobile" onclick="window.open('../item page/iphone11_item-page.html', '_self')">
+									<p class="option-text mobile-text">iPhone 11</p>
+								</div>
+							</div>
+							<div class="Samsung-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('mobiles')">‹</button>
+									<p class="dropdown-title side-title">Samsung</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Galaxy Z Fold 5</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Galaxy S24 Ultra</p>
+								</div>
+								<div class="option-button no-arrow mobile ">
+									<p class="option-text mobile-text">Galaxy Note 22</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Galaxy Z Flip 6</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Galaxy S22+</p>
+								</div>
+							</div>
+							<div class="Xiaomi-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('mobiles')">‹</button>
+									<p class="dropdown-title side-title">Xiaomi</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Mi 12 Pro</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Redmi K50 Pro</p>
+								</div>
+								<div class="option-button no-arrow mobile ">
+									<p class="option-text mobile-text">Mi Note 12</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Poco F5</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Redmi Note 11</p>
+								</div>
+							</div>
+							<div class="Oneplus-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('mobiles')">‹</button>
+									<p class="dropdown-title side-title">OnePlus</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">OnePlus 10 Pro</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">OnePlus Nord 3</p>
+								</div>
+								<div class="option-button no-arrow mobile ">
+									<p class="option-text mobile-text">OnePlus 9RT</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">OnePlus 8T</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">OnePlus 7 Pro</p>
+								</div>
+							</div>
+							<div class="Nokia-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('mobiles')">‹</button>
+									<p class="dropdown-title side-title">Nokia</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Nokia G50</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Nokia X100</p>
+								</div>
+								<div class="option-button no-arrow mobile ">
+									<p class="option-text mobile-text">Nokia C30</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Nokia 9.3 PureView</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Nokia 8.4 5G</p>
+								</div>
+							</div>
+							<div class="Huawei-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('mobiles')">‹</button>
+									<p class="dropdown-title side-title">Huawei</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Huawei P50 Pro</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Huawei Nova 8 Pro</p>
+								</div>
+								<div class="option-button no-arrow mobile ">
+									<p class="option-text mobile-text">Huawei Mate 50</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Huawei Nova 7i</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Huawei Enjoy 20 Pro</p>
+								</div>
+							</div>
+							<div class="Oppo-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('mobiles')">‹</button>
+									<p class="dropdown-title side-title">Oppo</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Oppo Find X5 Pro</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Oppo Reno 7 Pro</p>
+								</div>
+								<div class="option-button no-arrow mobile ">
+									<p class="option-text mobile-text">Oppo A95 5G</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Oppo A75</p>
+								</div>
+								<div class="option-button no-arrow mobile">
+									<p class="option-text mobile-text">Oppo A54s</p>
+								</div>
+							</div>
+						</div>
+								
+					</div>
+					
+				</div>
+				<div class="dropdown-box" onmouseleave="hidedropdown('laptops', 'side-laptop');">
+					<div class="dropdown-placeholder" onmouseover="showdropdown('laptops', 'side-laptop') ">
+						<p class="placeholder-text">Laptops</p>
+						<p class="placeholder-arrow">‹</p>
+					</div>
+					<div class="laptops-dropdowns-all">
+						<div class="laptops-dropdown-hidden laptops-dropdown">
+							<p class="dropdown-title laptops-title">Laptops</p>
+							<div class="option-button" onclick="changingDropdown('laptops', 'Applel', 'side-laptop')">
+								<p class="option-text">Apple</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('laptops', 'Lenovo', 'side-laptop')">
+								<p class="option-text">Lenovo</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('laptops', 'Acer', 'side-laptop')">
+								<p class="option-text">Acer</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('laptops', 'HP', 'side-laptop')">
+								<p class="option-text">HP</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('laptops', 'Dell', 'side-laptop')">
+								<p class="option-text">Dell</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('laptops', 'Microsoft', 'side-laptop')">
+								<p class="option-text">Microsoft</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('laptops', 'MSI', 'side-laptop')">
+								<p class="option-text">MSI</p>
+								<p class="option-arrow">‹</p>
+							</div>
+						</div>
+						<div class="side-laptop-dropdown side-dropdown">
+							
+						</div>		
+						<div class="hidden-dropdowns hidden-dropdowns-laptops">
+							<div class="Applel-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('laptops')">‹</button>
+									<p class="dropdown-title side-title">Apple</p>
+								</div>
+								
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MacBook Pro 16-inch</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MacBook Pro 14-inch</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MacBook Air M2</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MacBook Pro M2</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MacBook Pro M1</p>
+								</div>
+							</div>
+							<div class="Lenovo-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('laptops')">‹</button>
+									<p class="dropdown-title side-title">Lenovo</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">ThinkPad X1 Carbon Gen 11</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">IdeaPad 6 Pro</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Yoga 8 Pro</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Legion 8i</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">ThinkBook 9</p>
+								</div>
+							</div>
+							<div class="Acer-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('laptops')">‹</button>
+									<p class="dropdown-title side-title">Acer</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Aspire 14T Pro</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Predator X1</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Nitro 15S</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Swift 8X</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">ConceptD 7</p>
+								</div>
+							</div>
+							<div class="HP-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('laptops')">‹</button>
+									<p class="dropdown-title side-title">HP</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Spectre x360 15T</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Envy 14Z</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Pavilion 15R</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Omen 17T</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">ProBook 450 G8</p>
+								</div>
+							</div>
+							<div class="Dell-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('laptops')">‹</button>
+									<p class="dropdown-title side-title">Dell</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">XPS 15 2023</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Inspiron 14 2023</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Alienware M17 2023</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">G5 Gaming 2023</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Latitude 9420</p>
+								</div>
+							</div>
+							<div class="Microsoft-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('laptops')">‹</button>
+									<p class="dropdown-title side-title">Microsoft</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Surface Laptop 5</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Surface Book 4</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Surface Pro 8</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Surface Go 3</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">Surface Laptop Go 2</p>
+								</div>
+							</div>
+							<div class="MSI-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('laptops')">‹</button>
+									<p class="dropdown-title side-title">MSI</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MSI GS66 Stealth</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MSI GE76 Raider</p>
+								</div>
+								<div class="option-button no-arrow laptop ">
+									<p class="option-text laptop-text">MSI GP66 Leopard</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MSI GF65 Thin</p>
+								</div>
+								<div class="option-button no-arrow laptop">
+									<p class="option-text laptop-text">MSI Prestige 14</p>
+								</div>
+							</div>
+						</div>
+							
+					</div>
+					
+				</div>
+				<div class="dropdown-box" onmouseleave="hidedropdown('electronics', 'side-electronic');">
+					<div class="dropdown-placeholder" onmouseover="showdropdown('electronics', 'side-electronic') ">
+						<p class="placeholder-text">Electronics</p>
+						<p class="placeholder-arrow">‹</p>
+					</div>
+					<div class="electronics-dropdowns-all">
+						<div class="electronics-dropdown-hidden electronics-dropdown">
+							<p class="dropdown-title electronics-title">Electronics</p>
+							<div class="option-button" onclick="changingDropdown('electronics', 'Tablet', 'side-electronic')">
+								<p class="option-text">Tablets</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('electronics', 'Headphone', 'side-electronic')">
+								<p class="option-text">Headphones</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('electronics', 'Mouse', 'side-electronic')">
+								<p class="option-text">Mouse</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('electronics', 'Microphone', 'side-electronic')">
+								<p class="option-text">Microphones</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('electronics', 'Keyboard', 'side-electronic')">
+								<p class="option-text">Keyboards</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('electronics', 'Monitor', 'side-electronic')">
+								<p class="option-text">Monitors</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							<div class="option-button" onclick="changingDropdown('electronics', 'Speaker', 'side-electronic')">
+								<p class="option-text">Speakers</p>
+								<p class="option-arrow">‹</p>
+							</div>
+							
+						</div>
+						<div class="side-electronic-dropdown side-dropdown">
+							
+						</div>		
+						<div class="hidden-dropdowns hidden-dropdowns-electronics">
+							<div class="Tablet-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('electronics')">‹</button>
+									<p class="dropdown-title side-title">Tablets</p>
+								</div>
+						
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">iPad Pro 12.9-inch (2023)</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Galaxy Tab S8 Ultra</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Surface Pro 9</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Pixel Slate 3</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Kindle Fire HD 10</p>
+								</div>
+							</div>
+							<div class="Headphone-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('electronics')">‹</button>
+									<p class="dropdown-title side-title">Headphones</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Sony WH-1000XM5</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Bose QuietComfort 45</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Beats Studio Buds Pro</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">JBL Quantum 800</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Sennheiser HD 660 S</p>
+								</div>
+							</div>
+							<div class="Mouse-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('electronics')">‹</button>
+									<p class="dropdown-title side-title">Mouse</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">ASUS ROG Gladius III</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Razer DeathAdder V2</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Alienware AW610M</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">MSI Clutch GM41</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Logitech G Pro X Superlight</p>
+								</div>
+							</div>
+							<div class="Microphone-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('electronics')">‹</button>
+									<p class="dropdown-title side-title">Microphones</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Blue Yeti X</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Audio-Technica AT2020</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Shure MV7</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Rode NT-USB Mini</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Samson Q2U</p>
+								</div>
+							</div>
+							<div class="Keyboard-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('electronics')">‹</button>
+									<p class="dropdown-title side-title">Keyboards</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Logitech G Pro X</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Razer Huntsman Elite</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">SteelSeries Apex Pro</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Fantech MK855</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Corsair K95 RGB Platinum XT</p>
+								</div>
+							</div>
+							<div class="Monitor-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('electronics')">‹</button>
+									<p class="dropdown-title side-title">Monitors</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">LG OLED C1</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">ASUS ROG Swift PG279Q</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Dell Ultrasharp U3219Q</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Acer Predator X27</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">BenQ PD2700U</p>
+								</div>
+							</div>
+							<div class="Speaker-dropdown">
+								<div class="upper-sidemenu">
+									<button class="back-arrow" onclick="dropdownreturn('electronics')">‹</button>
+									<p class="dropdown-title side-title">Speakers</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Sonos One</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Bose SoundLink Revolve</p>
+								</div>
+								<div class="option-button no-arrow electronic ">
+									<p class="option-text electronic-text">JBL Flip 5</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">Sony SRS-X9</p>
+								</div>
+								<div class="option-button no-arrow electronic">
+									<p class="option-text electronic-text">KEF LS50 Wireless</p>
+								</div>
+							</div>					
+						</div>
+						
+							
+					</div>
+					
+				</div>
+				<div class="dropdown-box" onmouseleave="hidedropdown('accessories', 'side-accessory');">
+					<div class="dropdown-placeholder" onmouseover="showdropdown('accessories', 'side-accessory') ">
+						<p class="placeholder-text">Accessories</p>
+						<p class="placeholder-arrow">‹</p>
+					</div>
+					<div class="accessories-dropdowns-all">
+						<div class="accessories-dropdown-hidden accessories-dropdown">
+							<p class="dropdown-title accessories-title">Accessories</p>
+							<div class="option-button no-arrow">
+								<p class="option-text">Smart Watches</p>
+							</div>
+							<div class="option-button no-arrow">
+								<p class="option-text">Stylus Pens</p>
+							</div>
+							<div class="option-button no-arrow">
+								<p class="option-text">EarBuds</p>
+							</div>
+							<div class="option-button no-arrow">
+								<p class="option-text">Webcams</p>
+							</div>
+							<div class="option-button no-arrow">
+								<p class="option-text">Tripods</p>
+							</div>
+							<div class="option-button no-arrow">
+								<p class="option-text">Printers</p>
+							</div>
+							<div class="option-button no-arrow">
+								<p class="option-text">Dash Cams</p>
+							</div>
+							
+						</div>
+		
+					</div>
+					
+				</div>
+			</div>
+			<div class="right-navbar">
+				<div class="cartbutton-container" onclick="window.open('../cartpage/cartpage.html', '_self')">
+					<button class="cartbutton">
+						<img src="images/cartimg.png" class="carticon">
+					</button>
+				</div>
+				<button onclick="window.open('../iteventposter/iteventposter.html', '_self')">
+					<p class="option-text"><strong>IT</strong></p>
+				</button>
+				<div class="dropdown-box" style="justify-content: center;" onmouseleave="hidedropdown('profile');">
+					<div class="dropdown-placeholder" onmouseenter="showdropdown('profile') ">
+						<button class="profilebutton">
+							<img src="images/profileimg.png" class="profileicon">
+						</button>
+					</div>
+	
+					<div class="profile-dropdowns-all">
+						<div class="profile-dropdown">
+							<p class="dropdown-title settings-title">Settings</p>
+							<div class="option-button mode-switch-box">
+								<p class="option-text">Mode</p>
+								<div class="modetogglebutton-outsidebox" onclick="togglebuttontoggled()">
+									<div class="modetogglebutton-insidebox"></div>
+								</div>
+							</div>
+	
+						</div>		
+					</div>	
+				</div>
+			</div>
+	
+	
+			
+		</div>
+		<div class="itembox">
+			<div class="itempages">
+				<div class="iteminfo">
+					<div class="itemimages-grid">
+						<img src="images/iphone14img.png" class="itemlargeimage">
+						<div class="itemsmallerimages-grid">
+							<img src="images/iphone14backimg.png" class="itemsmallerimages">
+							<img src="images/iphone14sideimg.png" class="itemsmallerimages">
+							<img src="images/iphone14manyimg.png" class="itemsmallerimages">
+						</div>
+					</div>
+					<div class="itemdesc-grid">
+						<div class="itempath">
+							Mobiles > Apple > iPhone 14
+						</div>
+						<div class="itemabout-grid">
+							<p class="itemname">iPhone 14</p>
+							<p class="itemmodel">128GB</p>
+							<p class="itemdescription">The iPhone 14 is a remarkable device. It offers extraordinary battery life, a lightweight design, pro-level camera and video features, groundbreaking safety capabilities like Emergency SOS via satellite, and all powered by the latest iOS 16. With its sleek design and advanced features, the iPhone 14 is your perfect companion.</p>
+						</div>
+						<div class="itemcoloroptions-grid">
+							<p class="itemcolors-title">iPhone colors</p>
+							<div class="itemcolors-grid">
+								<div onclick="colorpicker('Space Gray')">
+									<img class="colors" style="background-color: #333333">
+								</div>
+								<div onclick="colorpicker('Blue')">
+									<img class="colors" style="background-color: #75baff;">
+								</div>
+								<div onclick="colorpicker('Rose Gold')">
+									<img class="colors" style="background-color: #FFC0CB;">
+								</div>
+							</div>
+						</div>
+						<div class="itemcartoptions-grid">
+							<div class="Price-grid">
+								<p class="price-title">Price</p>
+								<p class="final-price">$1199.99</p>
+								<p class="unit-price">$1199.99</p>
+							</div>
+							<div class="quantity-edit">
+								<button class="minus-button quantity-button" onclick="itemamountcalc(-1, 1199.99)">-</button>
+								<p class="quantity"></p>
+								<button class="plus-button quantity-button" onclick="itemamountcalc(+1, 1199.99)">+</button>
+							</div>
+							<div class="addcart-button-container">
+								<button class="addcart-button" onclick="addtocarttoggle()">
+									<img src="images/cartimg.png" class="addcartbutton-img">
+									<p class="addtocart-text">Add to Cart</p>
+								</button>
+							</div>							
+						</div>
+					</div>
+				</div>
+				<div class="itemdetails">
+				</div>
+			</div>
+		</div>
+		<script src="item page.js"></script>
+		<div class="hidden-content">
+			<div class="addedtocart-button-hidden">
+				<p class="checkmark-cartbutton">&#10003;</p>
+				<p class="addedtocart-text">Added to Cart</p>
+			</div>
+			<div class="addtocart-button-hidden">
+				<img src="images/cartimg.png" class="addcartbutton-img">
+				<p class="addtocart-text">Add to Cart</p>
+			</div>
+			<div class="itemcolor">Space Gray</div>
+			<div class="category">Mobile</div>
+		</div>
+	</body>
+</html>
+		
